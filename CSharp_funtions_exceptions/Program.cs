@@ -29,12 +29,14 @@
         }
 
         // Printing a result array
-        private static void PrintArray(double[] array)
+        private static String CreateResultOfReverseArray(double[] array)
         {
+            String result = "";
             foreach( double val in array)
             {
-                Console.WriteLine(val);
+                result += val.ToString() + " ";
             }
+            return result;
         }
 
         public static void Main()
@@ -42,12 +44,12 @@
             double[] test_array_1 = { 1, 2, 3, 4, 5 };
             double[] result_array_1 = ReverseArray(test_array_1);
             Console.WriteLine("Test for even number of elements of an array:");
-            PrintArray(result_array_1);
+            Console.WriteLine(CreateResultOfReverseArray(result_array_1));
 
             double[] test_array_2 = { 1, 2, 3, 4 };
             double[] result_array_2 = ReverseArray(test_array_2);
             Console.WriteLine("\nTest for odd number of elements of an array:");
-            PrintArray(result_array_2);
+            Console.WriteLine(CreateResultOfReverseArray(result_array_2));
         }
     }
 }
