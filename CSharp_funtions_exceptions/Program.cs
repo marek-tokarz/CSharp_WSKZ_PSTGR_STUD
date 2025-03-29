@@ -12,7 +12,6 @@
             int i = 0;
             int j = numberOfElements - 1;
 
-
             for (int k = 0; k < numberOfElements; k++)
             {
                 if (i < j)
@@ -26,6 +25,21 @@
             }
 
             return array;
+        }
+
+        private static double SumOfElements(double[] sum, double a, double b)
+        {
+            double result = 0;
+
+            foreach(double val in sum)
+            {
+                if(val >= a && val <= b)
+                {
+                    result += val;
+                }
+            }
+
+            return result;
         }
 
         // Printing a result array
@@ -50,6 +64,11 @@
             double[] result_array_2 = ReverseArray(test_array_2);
             Console.WriteLine("\nTest for odd number of elements of an array:");
             Console.WriteLine(CreateResultOfReverseArray(result_array_2));
+
+            double sum1 = SumOfElements(test_array_1, 2, 4);
+            Console.WriteLine("sum1: " + sum1);
+            double sum2 = SumOfElements(test_array_1, 1, 3);
+            Console.WriteLine("sum2: " + sum2);
         }
     }
 }
