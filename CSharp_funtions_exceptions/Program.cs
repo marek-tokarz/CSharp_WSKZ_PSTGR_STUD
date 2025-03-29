@@ -31,18 +31,27 @@
 
         public static void Main()
         {
-            double[] test_array = { 1, 2, 3, 4, 5 };
+            double[] test_array_1 = { 1, 2, 3, 4, 5 };
 
-            double[] result_array = ReverseArray(test_array);
+            double[] result_array_1 = ReverseArray(test_array_1);
 
-            for(int i = 0; i< result_array.Length; i++)
+            double[] test_array_2 = { 1, 2, 3, 4 };
+
+            double[] result_array_2 = ReverseArray(test_array_2);
+
+            Console.WriteLine("Test for even number of elements of an array:");
+
+            for (int i = 0; i< result_array_1.Length; i++)
             {
-                Console.WriteLine("array[" + i + "]: " + test_array[i]);
+                Console.WriteLine("array[" + i + "]: " + test_array_1[i]);
             }
-           
+
+            Console.WriteLine("\nTest for odd number of elements of an array:");
+
+            for (int i = 0; i < result_array_2.Length; i++)
+            {
+                Console.WriteLine("array[" + i + "]: " + test_array_2[i]);
+            }
         }
-
-
-
     }
 }
