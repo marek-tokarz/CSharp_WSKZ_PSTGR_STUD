@@ -48,7 +48,9 @@
         {
             return word1.ToLower() + word2.ToUpper();
         }
-
+        
+        /* Commented in order to run a Main() function in another file
+         * 
         public static void Main()
         {
             // single-cast delegate
@@ -78,5 +80,6 @@
             // ABC - def - abcDEF
 
         }
+        */
     }
 }
