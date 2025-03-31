@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<books>
+  <book>
+    <title>
+			Pan Tadeusz
+		</title>
+    <author>
+			Adam Mickiewicz
+		</author>
+    <category>
+			Poetry
+		</category>
+    <label>
+			Poetry label
+		</label>
+    <isbn>3943843</isbn>
+    <releaseDate>
+			12 march 2000
+		</releaseDate>
+    <catalogNumber>
+			1
+		</catalogNumber>
+  </book>
+  <book>
+    <title>Ulisses</title>
+    <author>James Joyce</author>
+    <category>Novel</category>
+    <label>Novel label</label>
+    <isbn>12345678</isbn>
+    <releaseDate>1 January 1929</releaseDate>
+    <catalogNumber>1</catalogNumber>
+  </book>
+  <book>
+    <title>Imie Rozy</title>
+    <author>Umberto Eco</author>
+    <category>Novel</category>
+    <label>Novel label</label>
+    <isbn>7654321</isbn>
+    <releaseDate>1 luty 2005</releaseDate>
+    <catalogNumber>3</catalogNumber>
+  </book>
+</books>
